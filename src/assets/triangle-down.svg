@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+    <defs>
+        <path id="vgipu1tera" d="M3.854 6.854l3.792 3.792c.196.196.512.196.708 0l3.792-3.792c.196-.196.196-.512 0-.708-.093-.093-.22-.146-.353-.146H4.207c-.276 0-.5.224-.5.5 0 .133.053.26.147.354z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g transform="translate(-1304 -1952) translate(250 1868.896) translate(341 41) translate(0 36) translate(714 7)">
+                            <mask id="11ek396nub" fill="#fff">
+                                <use xlink:href="#vgipu1tera"/>
+                            </mask>
+                            <use fill="#000" fill-rule="nonzero" xlink:href="#vgipu1tera"/>
+                            <g fill="#9FA7BB" mask="url(#11ek396nub)">
+                                <path d="M0 0H23V23H0z"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

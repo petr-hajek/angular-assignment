@@ -1,0 +1,41 @@
+{
+    "settings": {
+        "tiles": [
+            {
+                "background": "#407cff",
+                "text": "Styles",
+                "link": "www.papirfly.com"
+            },
+            {
+                "background": "#34c759",
+                "text": "Print Templates",
+                "link": "www.papirfly.com/templates"
+            },
+            {
+                "background": "#ff2d55",
+                "text": "Customization",
+                "link": "www.papirfly.com/customization"
+            },
+            {
+                "background": "#ff9500",
+                "text": "Analytics",
+                "link": "www.papirfly.com/analytics"
+            },
+            {
+                "background": "#5856d6",
+                "text": "Collaboration",
+                "link": "www.papirfly.com/collaboration"
+            },
+            {
+                "background": "#ff3b30",
+                "text": "Integration",
+                "link": "www.papirfly.com/integration"
+            }
+        ],
+        "text": {
+            "title": "Get Inspired",
+            "subtitle": "Extra text"
+        },
+        "display": "three-same"
+    }
+}

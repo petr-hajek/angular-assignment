@@ -1,0 +1,246 @@
+.dialog {
+  max-width: 1100px;
+  width: 80vw;
+  height: 512px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  display: flex;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+  }
+  &__left {
+    padding: 16px 20px 10px;
+    min-width: 320px;
+    justify-content: space-between;
+    border-right: solid 1px #e2e7ee;
+    h4 {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.6px;
+      color: #9fa7bb;
+      text-transform: uppercase;
+      margin: 14px 0 6px;
+    }
+    input,
+    select {
+      width: 170px;
+    }
+    select {
+      padding: 5px 6px 4px 32px;
+      margin-bottom: 16px;
+      appearance: none;
+    }
+    .select {
+      margin-left: -16px;
+      &:before {
+        content: "";
+        position: relative;
+        display: inline-block;
+        left: 24px;
+        background: url("/assets/view_array.svg") no-repeat right center;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+      }
+      &:after {
+        content: "";
+        position: relative;
+        display: inline-block;
+        right: 22px;
+        background: url("/assets/triangle-down.svg") no-repeat right center;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+      }
+    }
+    &__bottom {
+      border-top: solid 1px #f1f4f8;
+      padding: 10px 20px;
+      margin: 0 -20px;
+      button {
+        width: 100%;
+        height: 40px;
+      }
+    }
+    .display-heading {
+      margin: 16px 0 5px;
+    }
+  }
+  &__right {
+    width: 100%;
+    background-color: #f9fafb;
+    padding: 45px 20px;
+    overflow: auto;
+    &__heading {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      h5 {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.62;
+        color: #516173;
+        margin: 0;
+      }
+      button {
+        height: 24px;
+      }
+    }
+    input[type="text"] {
+      width: 220px;
+    }
+    input[type="color"] {
+      height: 18px;
+      width: 39px;
+      padding: 0;
+      padding-right: 20px;
+      border: none;
+      background: url("/assets/triangle-down.svg") no-repeat right center;
+      background-size: contain;
+      cursor: pointer;
+    }
+
+    table {
+      background-color: white;
+      border-radius: 4px;
+      border: solid 1px #e2e7ee;
+      border-collapse: collapse;
+      thead {
+        height: 30px;
+        background-color: #f1f4f8;
+        border-bottom: solid 1px #e2e7ee;
+        padding-left: 14px;
+        th {
+          font-size: 10px;
+          font-weight: 500;
+          letter-spacing: 0.6px;
+          color: #516173;
+          text-align: left;
+          text-transform: uppercase;
+        }
+        th:last-child {
+          padding-right: 8px;
+          text-align: right;
+        }
+      }
+      tbody {
+        tr {
+          height: 42px;
+          border-bottom: 1px solid #f9fafb;
+        }
+        tr:last-child {
+          border: solid 1px #e2e7ee;
+        }
+      }
+      th:first-child,
+      td:first-child {
+        padding-left: 14px;
+        padding-right: 24px;
+      }
+      td {
+        min-width: 24px;
+        padding-right: 18px;
+      }
+      button {
+        font-size: 16px;
+        padding: 0;
+        width: 16px;
+        height: 16px;
+        &.btn-dots {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  input,
+  select,
+  select option {
+    font-family: Inter;
+    font-size: 13px;
+    line-height: 1.62;
+    color: #242b39;
+    border-radius: 3px;
+    border: solid 1px #e2e7ee;
+    background-color: white;
+    height: 30px;
+  }
+  &__title {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #2f3748;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  label {
+    font-size: 13px;
+    line-height: 1.62;
+    color: #516173;
+  }
+  .blue-btn {
+    background-color: #407cff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+  }
+  input[type="text"] {
+    padding-left: 8px;
+  }
+}
+
+.btn-close {
+  position: absolute;
+  right: 14px;
+  top: 11px;
+  padding: 0;
+  background-color: #f9fafb;
+  &,
+  & img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.admin-squares {
+  margin: -1px 19px 0 0;
+  color: #407cff;
+  font-size: 16px;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+}
+
+@media (max-width: 1280px) {
+  .dialog__right {
+    input[type="text"] {
+      width: 120px;
+    }
+  }
+}
+
+@media (max-width: 899px) {
+  .dialog {
+    flex-direction: column;
+    &__right {
+      overflow: initial;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-column {
+    width: 100px;
+  }
+}

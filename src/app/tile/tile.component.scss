@@ -1,0 +1,17 @@
+.tile {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px;
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.13;
+    text-align: center;
+    color: #fff;
+    word-wrap: anywhere;
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "settings": {
+    "display": "two-sm-one-lg",
+    "text": {
+      "title": "Get Inspired",
+      "subtitle": "Extra text here"
+    },
+    "tiles": [
+      {
+        "background": "#407cff",
+        "text": "Styles",
+        "link": "www.papirfly.com"
+      },
+      {
+        "background": "#5856d6",
+        "text": "Collaboration Colla boration Cola",
+        "link": "www.papirfly.com/collaboration"
+      },
+      {
+        "background": "#ff9500",
+        "text": "Analytics",
+        "link": "www.papirfly.com/analytics"
+      },
+      {
+        "background": "#7cc297",
+        "text": "Tests",
+        "link": "www.papirfly.com"
+      },
+      {
+        "background": "#ff2d55",
+        "text": "loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong",
+        "link": "www.papirfly.com/customizationbbbbbbbbbbbbbbbbb"
+      },
+      {
+        "background": "#34c759",
+        "text": "Print Template",
+        "link": "www.papirfly.com/templates"
+      },
+      {
+        "background": "#407cff",
+        "text": "another one another one another one another one another one another one another one another one another one ",
+        "link": "www.papirfly.com"
+      },
+      {
+        "background": "#407cff",
+        "text": "xxxx",
+        "link": "xxx"
+      }
+    ]
+  }
+}

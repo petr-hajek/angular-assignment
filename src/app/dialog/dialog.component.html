@@ -1,0 +1,124 @@
+<div class="dialog" [formGroup]="settingsForm">
+  <div class="dialog__left">
+    <div>
+      <h3 class="dialog__title">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          fontIcon="dashboard"
+          class="admin-squares"
+        />Tiles
+      </h3>
+      <mat-divider />
+      <div class="display-heading">
+        <label for="display">Display</label>
+      </div>
+      <div class="select">
+        <select id="display" formControlName="display">
+          <option value="three-same">3 tiles</option>
+          <option value="two-sm-one-lg">2 small & 1 long</option>
+        </select>
+      </div>
+      <mat-divider />
+      <div formGroupName="text">
+        <h4>Text</h4>
+        <div class="space-between">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            placeholder="Value"
+            id="title"
+            formControlName="title"
+          />
+        </div>
+        <div class="space-between">
+          <label for="subtitle">Subtitle</label>
+          <input
+            type="text"
+            placeholder="Value"
+            id="subtitle"
+            formControlName="subtitle"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="dialog__left__bottom">
+      <button
+        mat-raised-button
+        class="blue-btn"
+        (click)="onSubmit()"
+        [disabled]="loading"
+      >
+        <span *ngIf="loading">Loading</span><span *ngIf="!loading">Update</span>
+      </button>
+    </div>
+  </div>
+  <div class="dialog__right">
+    <button
+      mat-dialog-close
+      mat-icon-button
+      class="btn-close"
+      aria-label="Close settings"
+    >
+      <img src="/assets/cross.svg" alt="" />
+    </button>
+    <div class="dialog__right__heading">
+      <h5>Tiles</h5>
+      <button mat-raised-button class="blue-btn" (click)="addTile()">
+        <mat-icon svgIcon="plus" />
+        Add
+      </button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th><mat-icon svgIcon="arrange-down" /></th>
+          <th class="bg-column">bg</th>
+          <th>text</th>
+          <th>link</th>
+          <th></th>
+          <th><mat-icon svgIcon="triangle-down" /></th>
+        </tr>
+      </thead>
+      <tbody
+        cdkDropList
+        (cdkDropListDropped)="dropTile($event)"
+        formArrayName="tiles"
+      >
+        <tr
+          *ngFor="let tile of tiles.controls; let i = index"
+          [formGroupName]="i"
+          cdkDrag
+        >
+          <td>
+            <button mat-icon-button cdkDragHandle>
+              <mat-icon svgIcon="move" />
+            </button>
+          </td>
+          <td><input type="color" formControlName="background" /></td>
+          <td><input type="text" formControlName="text" /></td>
+          <td><input type="text" formControlName="link" /></td>
+          <td>
+            <button
+              mat-icon-button
+              aria-label="Remove tile"
+              (click)="removeTile(i)"
+            >
+              <mat-icon svgIcon="remove" aria-label="Remove tile" />
+            </button>
+          </td>
+          <td>
+            <button
+              mat-icon-button
+              aria-label="More options"
+              disabled
+              class="btn-dots"
+            >
+              •••
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
