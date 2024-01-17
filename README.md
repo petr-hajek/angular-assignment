@@ -37,6 +37,7 @@ This solution implements all the main requirements and these extra ones:
 - There's a drag and drop of the tiles
 - There are some animations using Material library (eg. modal loading, button ripple effects, etc.)
 - There's a loading state when updating settings
+- The dialog should usable on all screen sizes (but could be improved)
 
 ## Possible improvements
 
