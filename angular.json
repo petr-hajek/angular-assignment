@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tiles-paperfly": {
+    "tiles-papirfly": {
       "projectType": "application",
       "root": "",
       "sourceRoot": "src",
@@ -56,10 +56,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "tiles-paperfly:build:production"
+              "buildTarget": "tiles-papirfly:build:production"
             },
             "development": {
-              "buildTarget": "tiles-paperfly:build:development"
+              "buildTarget": "tiles-papirfly:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -67,7 +67,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "tiles-paperfly:build"
+            "buildTarget": "tiles-papirfly:build"
           }
         },
         "test": {
@@ -92,11 +92,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "tiles-paperfly:serve"
+            "devServerTarget": "tiles-papirfly:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "tiles-paperfly:serve:production"
+              "devServerTarget": "tiles-papirfly:serve:production"
             }
           }
         }

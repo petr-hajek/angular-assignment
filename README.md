@@ -1,4 +1,4 @@
-This is a sample Angular app as an assignment for Paperfly
+This is a sample Angular app as an assignment for Papirfly
 
 ## how to install and run
 
